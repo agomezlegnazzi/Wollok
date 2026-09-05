@@ -34,3 +34,21 @@ object emilia {
 
 
 
+// IMPLEMENTAR A RAMIRO, que cuando entrena un ave la hace volar 15KM CUANDO ESTÁ DE BUEN HUMOR Y CUANDO NO EL DOBLE. 
+// Ramiro solamente está de buen humor cuando durmió por lo menos 8 horas. 
+
+object ramiro {
+  var horasDormidas = 0
+
+  method horasDormidas() = horasDormidas // getter
+
+  method horasDormidas(horas) { horasDormidas = horas } // setter
+  
+  method estaDeBuenHumor() = horasDormidas >= 8
+
+  method entrená(ave) {
+        const distancia = if(self.estaDeBuenHumor()) 15 else 30
+  }
+}
+
+// para mandar un mensaje a si mismo usa self. 
