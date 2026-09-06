@@ -1,0 +1,19 @@
+import gandalf.*
+
+
+
+
+
+
+
+
+
+
+
+
+
+test "Poder de Gandalf con 5 de vida y su báculo que es 1300." {
+    gandalf.agregarArma(baculo)
+    gandalf.vida(5)
+    assert.equals(2300, gandalf.poder())
+}
